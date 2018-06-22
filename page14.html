@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Dashboard 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700|Poppins" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div>
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="margin-right: 65px;" href="#">
+            <img src="./assets/llogo-copy-5.png" style="height: 21px;width: 94px">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="#">Dashboard
+                <span class="glyphicon glyphicon-user"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">Pay
+                <img src="./assets/layer-14-copy-5.png" style="height: 8px;width: 8px">
+              </a>
+            </li>
+            <li class="requests">
+              <a href="#">Loan Requests
+                <img src="./assets/layer-11-copy-5.png" style="height: 8px;width: 8px">
+              </a>
+            </li>
+            <li class="">
+              <a href="#">Docu center
+                <img src="./assets/layer-13-copy-5.png" style="height: 9px;width: 11px">
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#">
+                <span class="icon">H</span> Habeeb Bombata
+                <span class="glyphicon glyphicon-log-out"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container dashboard">
+      <div class="col-md-10 col-md-offset-1">
+        <form>
+          <div>
+            <div class="row">
+              <div class="row">
+              <div class="col-md-6">
+              <h4>Personal Details</h4>
+              </div>
+              <div class="nav-employee col-md-6 text-right">
+                  <a><span class="glyphicon glyphicon-arrow-left"></span> Previous employee</a>
+                  <a>Next employee <span class="glyphicon glyphicon-arrow-right"></span></a>
+              </div>
+              </div>
+              <div class="clear"></div>
+              <hr/>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="fname" placeholder="Habeeb">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="mname" placeholder="Middle Name">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="sname" placeholder="Bombata">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <select id="sex" class="form-control active">
+                    <option>Female</option>
+                    <option>Male</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h4>Personal Details</h4>
+              <hr/>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="fname" placeholder="Habeeb">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h4>Contact Details</h4>
+              <hr/>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="email" placeholder="Habeeb@hello.com">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h4>Salary Details</h4>
+              <hr/>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="bank">Bank</label>
+                  <select id="bank" class="form-control">
+                    <option>Access Bank Nigeria</option>
+                    <option>First Basnk Nigeria</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="accountNo">Account Number</label>
+                  <input type="text" class="form-control" id="accountNo" placeholder="0025073681">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <label for="salary">Salary</label>
+                  <input type="text" class="form-control" id="salary" placeholder="N450,000">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="salary">Base Salary</label>
+                  <input type="text" class="form-control" id="base-salary" placeholder="N400,000">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="salary">Bonuses</label>
+                  <input type="text" class="form-control" id="bonuses" placeholder="N50,000">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h4>Health Access</h4>
+              <hr/>
+              <div class="checkbox col-md-6">
+                <label>
+                  <input type="checkbox"> Has Health Access
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <h4>Employee Group</h4>
+              <hr/>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="add-employee">Add Employee to a Group</label>
+                  <select id="add-employee" class="form-control">
+                    <option>None</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row text-center action-btn">
+            <button class="btn-border-danger">Disable</button>
+            <button type="submit" class="btn-green">Change Plans</button>
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

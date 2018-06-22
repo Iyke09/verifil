@@ -1,0 +1,726 @@
+/* RESET */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px !important;
+}
+body{
+  font-family: "Roboto Condensed"
+}
+.navbar {
+  background-color: #f9f9f9;
+  border-radius: 0px;
+  font-size: 13px;
+  border-bottom: 1px solid lightgrey;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.28);
+}
+.navbar-brand{
+  margin-left: 0px;
+}
+.navbar-toggle .icon-bar {
+	background: black;
+  }
+/*	.navbar-header a {
+  margin-right: 65px;
+}
+ul.navbar-nav li{
+margin-right:  25px;
+}*/
+.nav>li>a{
+color: #878686;
+margin-left: 20px;
+}
+.icon{
+width: 20px;
+height: 20px;
+object-fit: contain;
+background-color: #021b79;
+padding: 4px;
+border-radius: 50%;
+color: white;
+}
+.btn{
+  width: 154px;
+  height: 33px;
+  font-size: 14px;
+  border-radius: 7px;
+}
+.btn2{
+  color: white;
+}
+.m-header h2{
+  font-size: 29px;
+  font-family: "Roboto";
+  line-height: 14px;
+  color: #545353;
+}
+.m-header p{
+  font-size: 14px;
+  padding: 10px 0px;
+  color: #2f2f2f;
+}
+.m-more{
+  color: #61a60e;
+}
+.scores h3{
+  font-size: 20px;
+  color: #656565;
+}
+
+button, input[type="submit"], input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.ds-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  color: #545454
+}
+
+/* DASHBOARD 4 */
+
+.ds-container.ds-dashboard-4 {
+  height: 100%;
+}
+
+.ds-profile-details-container {
+  height: 600px;
+  width: 100%;
+  margin-right: 80px;
+  padding: 5px 4%;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.28);
+}
+
+.ds-profile-details-container > .ds-profile-head {
+  height: 12%;
+  display: flex;
+  flex-direction: row;
+  color: #717171;
+}
+
+.ds-profile-details-container > .ds-profile-head > .ds-title {
+  width: 80%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ds-profile-details-container > .ds-profile-head > .ds-icon {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ds-profile-details-container > .ds-profile-head > .ds-icon > img {
+  width: 25px;
+}
+
+.ds-profile-details-container > .ds-profile-body {
+  height: 78%;
+}
+
+.ds-profile-details-container > .ds-profile-body > .ds-row {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.ds-profile-details-container > .ds-profile-body > .ds-row > .ds-title {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.ds-profile-details-container > .ds-profile-body > .ds-row > .ds-data {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ds-profile-details-container > .ds-profile-footer {
+  height: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ds-graphics-details-container {
+  height: 600px;
+  width: 100%;
+}
+
+.ds-graphics-details-container > .ds-graphics-top {
+  display: flex;
+  height: 70%;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side {
+  width: 58%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card {
+  height: 125px;
+  width: 100%;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.28);
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-top {
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-top > .ds-icon {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-top > .ds-icon > img {
+  width: 35px;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-top > .ds-text {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-bottom {
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-bottom > .ds-date {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-salary-side > .ds-card > .ds-bottom > .ds-action {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side {
+  margin-left: 3%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card {
+  height: 95px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.28);
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card > .ds-icon {
+  width: 27%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card > .ds-icon > img {
+  width: 50px;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card > .ds-body {
+  width: 73%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: #868686;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card > .ds-body > .ds-text {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2%;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card > .ds-body > .ds-arrow {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10%;
+}
+
+.ds-graphics-details-container > .ds-graphics-top > .ds-qualification-side > .ds-card > .ds-body > .ds-arrow > img {
+  width: 25px;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom {
+  margin-top: 5%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  border-radius: 2px;
+  box-shadow: 0px 2px 4.9px 0.1px rgba(0, 0, 0, 0.28);
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-chart-side {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-chart-side > img {
+  margin-top: 30%;
+  height: 55px;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-message-side {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-message-side > .ds-top {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-message-side > .ds-top > .ds-greeting {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-message-side > .ds-top > .ds-message {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+  max-width: 190px;
+}
+
+.ds-graphics-details-container > .ds-graphics-bottom  > .ds-message-side > .ds-bottom {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+
+.ds-button {
+  padding: 0px 20px;
+  height: 32px;
+  width: auto;
+  font-size: 13px;
+  color: #e5e5e5;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.ds-button.smaller {
+  padding: 0px 10px;
+  font-size: 12px;
+  height: 25px;
+}
+
+.ds-button.longer {
+  padding: 0px 45px;
+}
+
+.ds-button.ds-border {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #61a60e;
+}
+
+.ds-button.ds-border-red {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ff0000;
+  color: #ff0000;
+}
+
+.ds-button-longer {
+  padding: 0px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PAYSLIP */
+.ds-container.ds-payslip {
+  flex-direction: column;
+}
+
+.ds-container > .ds-head {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+}
+
+.ds-container > .ds-head > .ds-img > img {
+  height: 40px;
+}
+
+.ds-container > .ds-head > .ds-text {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.ds-container > .ds-body {
+  height: 1000px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ds-container > .ds-body > .ds-title {
+  width: 90%;
+  height: 7%;
+  margin-top: 2%;
+  padding: 85px 5px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.ds-container > .ds-body > .ds-table {
+  width: 90%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-head {
+  height: 7%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1%;
+  border-bottom: 1px solid #eee;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-head img {
+  width: 25px;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-head .ds-text {
+  margin-left: 15px;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-head > .ds-left {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.ds-container > .ds-body > .ds-table > .ds-head > .ds-right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-body-1 {
+  width: 100%;
+  height: 29%;
+  padding: 0 4%;
+  margin-top: 2%;
+  display: flex;
+  align-items: center;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-body-1 > .ds-left {
+  width: 74%;
+  height: 100%;
+  line-height: 3em;
+}
+
+
+.ds-container > .ds-body > .ds-table > .ds-body-1 > .ds-right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%
+}
+
+.ds-container > .ds-body > .ds-table > .ds-body-1 > .ds-right.ds-2 {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  line-height: 3em;
+  flex-direction: column !important;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-body-1 > .ds-right > .ds-text {
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-body-1 > .ds-right img {
+  width: 35px;
+}
+
+
+.ds-container > .ds-body > .ds-table > .ds-total {
+  width: 100%;
+  height: 8%;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-total > .ds-left {
+  width: 74%;
+}
+
+.ds-container > .ds-body > .ds-table > .ds-total > .ds-right {
+  /* width: 30%; */
+}
+
+
+.ds-container > .ds-body > .ds-table > .ds-bottom {
+  background-color: white;
+  width: 100%;
+  margin-top: 10%;
+  height: 10%;
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+
+/* DASHBOARD 2 */
+.ds-container.ds-dash-2 {
+  height: auto;
+  flex-direction: column;
+}
+
+.ds-container.ds-dash-2 > .ds-head-2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* height: 150px; */
+}
+
+.ds-container.ds-dash-2 > .ds-head-2 > .ds-left {
+  width: 70%;
+  font-size: 40px;
+}
+
+.ds-container.ds-dash-2 > .ds-head-2 > .ds-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  width: 30%;
+}
+
+.ds-container.ds-dash-2 > .ds-head-2 > .ds-right > button {
+  margin-right: 50px;
+}
+
+.ds-container.ds-dash-2 > .ds-head-2 > .ds-right img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 {
+  width: 100%;
+  height: 300px;
+  border-top: 1px solid #8492af;
+  border-bottom: 1px solid #8492af;
+  padding: 0 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-icon {
+  width: 10%;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-icon img {
+  height: 100px;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-main {
+  width: 40%;
+  margin-right: 25%
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-main > .ds-message > .ds-title {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 30px;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-main > .ds-more {
+  margin-top: 20px;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-main > .ds-more img {
+  height: 15px;
+  margin-right: 10px;
+}
+
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-left {
+  width: 25%;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-left > .ds-top {
+  line-height: 3em;
+}
+
+.ds-container.ds-dash-2 > .ds-body-2 > .ds-left > .ds-action {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.ds-container.ds-dash-2 > .ds-border {
+  margin-top: 20px;
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #eee;
+}
+
+
+.ds-container.ds-dash-2 > .ds-bottom {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10%;
+}
+
+
+
+
+/*  COLORS  */
+.ds-green {
+  background-color: #61a60e;
+}
+
+.ds-text-green {
+  color: #61a60e;
+}
+
+.ds-gray {
+  background-color: #444444;
+}
+
+.ds-text-black-light {
+  color: #545454;
+}
+
+.ds-text-gray-light {
+  color: gba(255, 255, 255, 0.7);
+}
+
+.ds-text-gray-light-2 {
+  color: rgba(101, 101, 101, 0.5);
+}
+
+.ds-text-red {
+  color: #ff0000;
+}
+
+.ds-bold-1 {
+  font-weight: 100;
+}
+.media-body{
+  vertical-align: middle;
+}
+.m-20{
+  margin-top: 20px;
+}

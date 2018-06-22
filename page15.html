@@ -10,11 +10,49 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700|Poppins" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {
+      packages: ["corechart"]
+    });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Month', 'Amount'],
+        ['June', 95000],
+        ['July', 250000],
+        ['August', 160000],
+        ['September', 285000]
+      ]);
+
+      var options = {
+        title: '',
+        legend: {
+          position: 'none'
+        },
+        colors: ['#021b79'],
+        vAxis: {
+          minValue: 0,
+          maxValue: 280000,
+          gridlines: {
+            count: 11
+          }
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(document.getElementById('q-graph'));
+      chart.draw(data, options);
+    }
+    $(window).resize(function () {
+      drawChart();
+    });
+  </script>
 </head>
 
 <body>
   <div>
-    <nav class="navbar">
+    <nav class="navbar" style="margin-bottom: 0">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -60,50 +98,79 @@
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="row">
+    <div class="container-fluid ds-graph" >
+      <div class="row text-poppin" style="
+      display: flex;
+      flex-wrap: wrap;
+  ">
         <div class="col-md-5">
-          <div class="card">
-            <img src="" alt="Avatar" style="width:100%">
-            <div class="card-body">
-              <h4>
-                <b>John Doe</b>
-              </h4>
-              <p>Architect & Engineer</p>
+          <div class="card" style="
+          height: 100%;
+      ">
+
+            <div id="q-graph" style="
+              height: 100%;
+          ">
             </div>
+            <div>
+              <h4 style="
+              font-size: 11px;
+              float: left;
+          ">Your recent Payroll runs</h4>
+              <button style="
+              float: right;
+          " class="btn-green  see-details-btn">Payroll history</button>
+            </div>
+<div class="clear"></div>
           </div>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-7 first-row">
           <div class="col-md-6">
             <div class="card">
               <div class="card-body">
-                  <img src="./assets/layer-1.png" alt="Avatar" style="width:100%">
-                <h4>26 Employees</h4>
-                <button class="btn-brown">ADD</button>
+                <div class="left">
+                  <p>
+                    <span>
+                      <img src="./assets/layer-18.png">
+                    </span> 26 Employees
+                    </>
+                </div>
+                <div class="right text-right">
+                  <p>Manage Employees
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-6">
             <div class="card">
-              <img src="img_avatar.png" alt="Avatar" style="width:100%">
               <div class="card-body">
-                <h4>
-                  <b>John Doe</b>
-                </h4>
-                <p>Architect & Engineer</p>
+                <div class="left">
+                  <p>
+                    <span>
+                      <img src="./assets/layer-19.png">
+                    </span> N 4,890,000
+                    </>
+                </div>
+                <div class="right text-right">
+                  <p>Manage Employees
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card text-center">
+            <div class="card text-center" >
               <img src="./assets/layer-21.png" alt="Avatar" style="width:100%">
-              <div class="card-body">
+              <div class="card-body icon-p">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utua.</p>
                 <button class="btn-brown">ADD</button>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 icon-p">
             <div class="card text-center">
               <img src="./assets/layer-22.png" alt="Avatar" style="width:100%">
               <div class="card-body">
@@ -112,7 +179,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 icon-p">
             <div class="card text-center">
               <img src="./assets/layer-20.png" alt="Avatar" style="width:100%">
               <div class="card-body">
@@ -123,12 +190,23 @@
           </div>
           <div class="col-md-12">
             <div class="card">
-              <img src="img_avatar.png" alt="Avatar" style="width:100%">
-              <div class="card-body">
-                <h4>
-                  <b>John Doe</b>
-                </h4>
-                <p>Architect & Engineer</p>
+              <div class="card-body reward row">
+                <div class="col-md-2 text-left">
+                  <img src="./assets/layer-17.png" alt="Avatar" style="width:27px;height:32px;">
+                </div>
+                <div class="col-md-4 text-center reward-text">
+                  <h4>Congratulations Habeeb,
+                  </h4>
+                </div>
+                <div class="col-md-5 text-center">
+                  <p>You have got 16 Employees, and all of them are covered, by Health Insurance</p>
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-6 text-right">
+                  <button class="btn-green see-details-btn"> See Details</button>
+                </div>
               </div>
             </div>
           </div>
